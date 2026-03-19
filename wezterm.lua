@@ -5,6 +5,9 @@ local act = wezterm.action
 local config = {}
 
 config.color_scheme = 'Dracula'
+
+config.scrollback_lines = 30000
+
 config.tab_bar_at_bottom = true
 
 config.window_background_opacity = 0.98
@@ -69,6 +72,8 @@ config.keys = {
     { key = '4', mods = 'CTRL', action = act.ActivateTab(3) },
     { key = '5', mods = 'CTRL', action = act.ActivateTab(4) },
     { key = '6', mods = 'CTRL', action = act.ActivateTab(5) },
+    { key = '7', mods = 'CTRL', action = act.ActivateTab(6) },
+    { key = '8', mods = 'CTRL', action = act.ActivateTab(7) },
     -- Close current pane
     {
         key = 'w',
